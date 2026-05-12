@@ -2,21 +2,20 @@
 import { Box, Button, Heading, Text, VStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
-export default function HomePage() {
+export default function About() {
   return (
     <Box bg="gray.800" p={6} borderRadius="2xl" boxShadow="md">
       <VStack gap={4} align="stretch">
         <Heading size="lg" color="white">
-          Welcome to Yapper
+          About Yapper ＼(ﾟｰﾟ＼)
         </Heading>
         <Text color="gray.400">
-          Head over to the feed to view posts and create your own.
+          Are you tired of not being able to yap 
+          with your chaps without other social media cap?
+          Yapper is a dapper alternative messaging site.
         </Text>
         <Button asChild>
-            <Link to="/feed">Go to Feed</Link>
-        </Button>
-        <Button asChild>
-            <Link to="/about">About Us</Link>
+            <Link to="/">Return to Home Page</Link>
         </Button>
       </VStack>
     </Box>

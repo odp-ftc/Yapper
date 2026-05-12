@@ -11,6 +11,7 @@ import {
   Heading,
   HStack,
   Input,
+  Link,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -88,6 +89,9 @@ function App() {
             <Text color="gray.400" mt={2}>
               A simple Twitter-style homepage built with React and Chakra UI.
             </Text>
+            <Button asChild>
+              <Link href="/">Return To Home Page</Link>
+            </Button>
           </Box>
 
           <Box bg="gray.800" p={5} borderRadius="2xl" boxShadow="md">
